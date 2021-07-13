@@ -21,9 +21,6 @@ function validAnagram(str1, str2) {
         stringObj2[letter] = (stringObj2[letter] || 0) + 1;
     }
 
-    // console.log(stringObj1);
-    // console.log(stringObj2);
-
     // Compare the keys and values in both objects.
     for (let key in stringObj1) {
         if (!(key in stringObj2)) {
@@ -41,3 +38,4 @@ console.log(validAnagram("ku", "uk")) // true
 console.log(validAnagram("", "")) // true
 console.log(validAnagram("kamille", "ellimak")) // true
 console.log(validAnagram("christian", "christiann")) // false
+console.log(validAnagram("cinema", "iceman")) // true
