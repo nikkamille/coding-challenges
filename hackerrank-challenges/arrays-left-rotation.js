@@ -1,3 +1,5 @@
+
+
 function rotLeft(a, d) {
     let counter = d;
 
