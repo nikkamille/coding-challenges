@@ -7,9 +7,10 @@ function findValue(arr, num) {
     let centerIndex = Math.floor((left + right) / 2);
 
     while (arr[centerIndex] !== num && arr[left] <= arr[right]) {
-        if (arr.length === 0) {
-            return -1;
-        } else if (num < arr[centerIndex]) {
+        // if (arr.length === 0) {
+        //     return -1;
+        // } 
+        if (num < arr[centerIndex]) {
             right = arr[centerIndex - 1];
             centerIndex = Math.floor((left + right) / 2);
         } else {
@@ -23,5 +24,5 @@ function findValue(arr, num) {
 
 console.log(findValue([1,2,3,4,5,6,7], 2)) // 1
 console.log(findValue([1,2,3,4,5,6,7], 8)) // -1 
-console.log(findValue([], 0)) // -1
-console.log(findValue([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], 17)) // 16
+console.log(findValue([], 15)) // -1
+console.log(findValue([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], 11)) // 10
