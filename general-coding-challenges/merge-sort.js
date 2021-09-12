@@ -51,5 +51,8 @@ function mergeSort(arr) {
 
 console.log(mergeSort([10,24,76,73,72,1,9]));
 
-// Big O of mergeSort for both time complexity and space complexity:
-// O(n log n)
+// Big O of mergeSort
+    // Time complexity: O(n log n)
+        // Decomposing the array O(log n)
+        // Comparisons per decomposition O(n)
+    // Space complexity: O(n)
